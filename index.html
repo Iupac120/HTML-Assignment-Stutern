@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My First html</title>
 </head>
 <body>
     <header>
-        <h1>Hey, I'm Augustine</h1>
+        <h1 id="h1">Hey, I'm Augustine</h1>
         <h4>A programmer with stutern</h4>
-        <img src="pix1.jpg"  alt="profile image" width="120">
-        <h2>About me</h2>
-        <p>I love to learn new knowledge and give all in order to come out the best.</p> 
+        <img src="pix1.jpg"  alt="profile image" width="120" id="image">
+        <h2 id="h2">About me</h2>
+        <p id="reason">Web development has a lot of opportunities in the tech industry. I love to learn new knowledge and give all in order to come out the best.
+        </p> 
+        <a href="http://www.facebook.com" id="external link" target="_blank">link</a>
         <hr>
     </header>
     <main>
@@ -26,41 +28,53 @@
         <hr>
         <h2>Services</h2>
         <p>Here is a list of services of what I can offer to you</p>
-        <ul>
-            <li>Web Development</li>
-            <li>Programming</li>
-            <li>Product Design</li>
+        <ol id="ordered" type="1">
+            <li id="service1">Web Development</li>
+            <li id="service2">Programming</li>
+            <li id="service3">Product Design</li>
 
+        </ol>
+        <ul id="unordered" type="square">
+            <li id="country1">Nigeria</li>
+            <li id="country2">Canada</li>
+            <li id="country3">United State</li>
         </ul>
         <hr>
         <h2>Would you love to do business with us?</h2>
-        <h5>Get in touch</h5>
-        <p>User Personal Information
+        <h3>Get in touch</h3>
+        
+        <div style="border: 0.1em solid black;" >User Personal Information 
             <form>
                 <label for="name">Enter your full name</label><br>
-                <input id="name" type="text"><br>
+                <input id="name" type="text" placeholder="Full Name"><br>
                 <label>Enter your Email</label><br>
-                <input id="email" type="email">
+                <input id="email" type="email" placeholder="Email address">
                 <br>
                 <label for="gender">Enter your gender</label><br>
-                <input id="gender" type="radio" value="Male">Male<br>
-                <input id="gender" type="radio" value="Female">Female<br>
-                <input id="gender" type="radio" value="Others">Others<br>
-                <label for="hobby">Hobby:</label>
+                <input id="radio_male" class="gender" type="radio" value="Male">Male<br>
+                <input id="radio_female" class="gender" type="radio" value="Female">Female<br>
+                <input id="radio_others" class="gender" type="radio" value="Others">Others<br>
+                <label for="hobby">Hobby:</label><br>
                 <input id="hobby" type="checkbox" value="cricket" >Cricket<br>
                 <input id="hobby" type="checkbox" value="Football">Football<br>
                 <input id="hobby" type="checkbox" value="Hockey">Hockey<br>
                 <label for="comment">Type your comment:</label><br>
-                <textarea id="comment" rows="12" cols="50">Comment</textarea><br>
-                <input type="submit">
+                <textarea id="text_area" class="comment" rows="12" cols="50">Comment</textarea><br>
+                <input type="submit" id="submit_button">
          
 
             </form>
-        </p>
+        </div>
 
     </main>
     <footer>
-
+        <div>contacts:
+           <span><a href="http://www.facebook.com/Ofor Augudtine">Facebook</a>
+            <a href="http://twitter.com/Ofor Augustine">Twitter</a>
+            <a href="http://linked.com/ofor Augustine">linked</a></span> 
+        </div>
+        <div><address>Km 4 Ondo Road,Akure<br>Ondo State.</address></div>
+        <div>copyright &copy; 2022 AusTech. Designed by <span>Augustine</span></div>
     </footer>
 </body>
 </html>
